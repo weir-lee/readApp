@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="root" class="container">
+    <!-- 顶部栏-->
+    <div id="top_nav" class="top-nav" style="display:none">
+        <div class="icon-back"></div>
+        <div class="nav-title">返回书架</div>
+    </div>
+
+    <div id="fiction_chapter_title"></div>
+    <div id="fiction_container" class="m-read-content">
+    </div>
+    <div class="m-button-bar">
+        <ul class="u-tab">
+            <li id="prev-btn">上一页</li>
+            <li id="next-btn">下一页</li>
+        </ul>
+    </div>
+
+    <!-- 底部栏-->
+    <div id="bottom_nav" class="bottom-nav"  style="display:none">
+        <ul class="clear-fix">
+            <li>
+                <div class="wrap">
+                    <div class="icon-menu"></div>
+                    <div class="icon-text">目录</div>
+                </div>
+            </li>
+            <li id="font_button">
+                <div class="wrap">
+                    <div class="icon-ft"></div>
+                    <div class="icon-text">字体</div>
+                </div>
+            </li>
+            <li id="day_night_switch" class="day-night-switch">
+                <div class="wrap" id="night" style="display:none">
+                    <div class="icon-night"></div>
+                    <div class="icon-text">夜间</div>
+                </div>
+                <div class="wrap" id="day">
+                    <div class="icon-day"></div>
+                    <div class="icon-text">白天</div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+    <!-- 底部面板-->
+    <div class="bottom-nav-pannel" style="display:none">
+        <div class="child-mod">
+            <span>字号</span>
+            <button id="larger_font">大</button>
+            <button id="smaller_font">小</button>
+        </div>
+        <div class="child-mod">
+            <span>背景</span>
+            <div class="bk-container" data-bg="#F7EEE5">
+                <span class="inner-circle"></span>
+                <span class="ring"></span>
+            </div>
+            <div class="bk-container" data-bg="#E9DFC7">
+                <span class="inner-circle"></span>
+                <span class="ring"></span>
+            </div>
+            <div class="bk-container" data-bg="#A4A4A4">
+                <span class="inner-circle"></span>
+                <span class="ring current"></span>
+            </div>
+            <div class="bk-container" data-bg="#CDEFCE">
+                <span class="inner-circle"></span>
+                <span class="ring"></span>
+            </div>
+            <div class="bk-container" data-bg="#283548">
+                <span class="inner-circle"></span>
+                <span class="ring"></span>
+            </div>
+            <div class="bk-container" data-bg="#0F1410">
+                <span class="inner-circle"></span>
+                <span class="ring"></span>
+            </div>
+
+        </div>
+    </div>
+    <!-- 屏幕正中间的层，点击后唤出底部面板-->
+    <div class="m-article-action">
+        <div id="action_mid" class="article-action-mid"></div>
+    </div>
+</div>
+
+
+</body>
+<script src="lib/zepto.min.js"></script>
+<script>
+    window.jQuery = $;
+</script>
+<script src="js/main.js"></script>
+<!--<script src="js/main_promise.js"></script>-->
+<script src="js/jquery.base64.js"></script>
+<script src="js/jquery.jsonp.js"></script>
+
+<script>
+
+</script>
+</html>
